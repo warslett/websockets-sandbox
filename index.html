@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>My Chat App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1>Chat room application</h1>
+    <div id="app">
+        <ul id="chathistory">
+            <li v-for="message in chathistory">
+                {{ message }}
+            </li>
+        </ul>
+        <div class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" v-model="message" />
+                <button class="btn btn-default" v-on:click="sendmsg">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>

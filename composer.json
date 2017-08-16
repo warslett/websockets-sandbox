@@ -1,0 +1,17 @@
+{
+    "name": "william/web-sockets",
+    "authors": [
+        {
+            "name": "William Arslett",
+            "email": "william.a@biffbangpow.com"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "0.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BiffBangPow\\WebSockets\\": "src"
+        }
+    }
+}
